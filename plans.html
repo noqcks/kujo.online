@@ -8,6 +8,7 @@
     <meta name="description" content="Unlimited, on-demand DevOps help for freelancers, startups, and agencies." />
     <link rel="stylesheet" href="css/app.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://gumroad.com/js/gumroad.js"></script>
     <link rel="icon" href="assets/frontend/favicon/favicon.ico">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.Kujo.online">
@@ -27,9 +28,7 @@
                         </div>
                     </li>
                     <li class="links-right">
-
-
-                        <div class="link blue-strong"><a href="plans.html">Get started</a></div>
+                    <div class="link blue-strong"><a href="plans.html">Get started</a></div>
                     </li>
                     <div class="menu-burger">
                         <div class="line"></div>
@@ -52,8 +51,16 @@
         <div class="view--plans page-view">
             <div class="head-section">
                 <div class="container">
-                    <div class="title">
+                    <div class="video-container">
+                    <video autoplay="" loop="" muted="" style="width: 100%;">
+                        <source src="assets/frontend/videos/videobg.mp4" type="video/mp4">
+                        <source src="assets/frontend/videos/videobg.mp4" type="video/webm">
+                    </video>
+                    </div>
+                    <div class="overlay-desc-plans">
+                    <div id="dynamic-title" class="title">
                         Pricing Plans
+                    </div>
                     </div>
                 </div>
             </div>
@@ -82,9 +89,7 @@
                                 </div>
                             </div>
                             <div class="plan-button">
-                                <div class="blue-strong">
-                                    <a href="plans/basic.html">PURCHASE PLAN</a>
-                                </div>
+                                <a class="gumroad-button" href="https://gum.co/kujo-basic" target="_blank" data-gumroad-single-product="true">PURCHASE PLAN</a>
                             </div>
                         </div>
                         <div class="plan premium">
@@ -110,9 +115,7 @@
                                 </div>
                             </div>
                             <div class="plan-button">
-                                <div class="blue-strong">
-                                    <a href="plans/premium.html">PURCHASE PLAN</a>
-                                </div>
+                                <a class="gumroad-button" href="https://gum.co/kujo-premium" target="_blank" data-gumroad-single-product="true">PURCHASE PLAN</a>
                             </div>
                         </div>
                     </div>
@@ -136,6 +139,27 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript">
+        function getUrlParameter(sParam)
+        {
+            var sPageURL = window.location.search.substring(1);
+            var sURLVariables = sPageURL.split('&');
+            for (var i = 0; i < sURLVariables.length; i++)
+            {
+                var sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] == sParam)
+                {
+                    return sParameterName[1];
+                }
+            }
+        }
+    </script>
+    <script>
+        var product = getUrlParameter('product');
+        if (product !== undefined) {
+            document.getElementById('dynamic-title').innerHTML = "Product Plans for " + product;
+        }
+    </script>
     <script src="js/app.js"></script>
     <script>
     $('.menu-burger').click(function() {
