@@ -521,7 +521,7 @@ footer {
 footer .start-new-project {
   padding: 50px 95px;
   display: inline-block;
-  background-color: #1B76BC;
+  background-color: #656A9C;
   position: relative;
   bottom: 70px;
   margin-bottom: 50px;
@@ -554,7 +554,7 @@ footer .start-new-project .blue-strong {
 
 footer .start-new-project .blue-strong a {
   background-color: #fff;
-  color: #1B76BC !important;
+  color: #656A9C !important;
   font-size: 12px;
   font-weight: 700;
 }
