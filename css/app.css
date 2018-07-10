@@ -2572,7 +2572,7 @@ footer .links .socials a .dribbble {
 .view--plans .head-section .container .title {
   font-size: 52px;
   font-weight: 600;
-  margin-bottom: 24px;
+  margin-bottom: 10%;
   text-align: center;
   color: #231F20;
 }
@@ -2583,17 +2583,93 @@ footer .links .socials a .dribbble {
 }
 
 .view--plans .plans-section .plans {
-  margin-top: -400px;
+  margin-top: -50%;
   margin-bottom: 100px;
   display: inline-block;
   width: 100%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
   .view--plans .plans-section .plans {
     margin-top: -70px;
   }
 }
+
+@media (max-width: 1300px) {
+  .view--plans .head-section .container .title {
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 20%;
+    text-align: center;
+    color: #231F20;
+  }
+}
+
+@media (max-width: 1000px) {
+  .view--plans .head-section .container .title {
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 110%;
+    text-align: center;
+    color: #231F20;
+  }
+}
+
+@media (max-width: 426px) {
+  .view--plans .head-section .container .title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 280%;
+    text-align: center;
+    color: #231F20;
+  }
+}
+
+@media (max-width: 426px) {
+  .view--plans .plans-section .plans {
+    margin-top: 50px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .view--plans .head-section .container .title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 330%;
+    text-align: center;
+    color: #231F20;
+  }
+}
+
+@media (max-width: 400px) {
+  .view--plans .plans-section .plans {
+    margin-top: 50px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .view--plans .head-section .container .title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 450%;
+    text-align: center;
+    color: #231F20;
+  }
+}
+
+@media (max-width: 320px) {
+  .view--plans .plans-section .plans {
+    margin-top: 50px;
+  }
+}
+
+/*@media (max-width: 1000px) {*/
+/*  .view--plans .plans-section .plans {
+    margin-top: -70px;
+  }
+}*/
 
 .view--plans .plans-section .plans .plan {
   transition: box-shadow 0.5s, -webkit-box-shadow 0.5s, transform 0.5s;
